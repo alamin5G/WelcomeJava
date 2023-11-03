@@ -2,7 +2,7 @@ package Listing_2;
 
 import java.util.Scanner;
 
-public class ComputeArea {
+public class ComputeAreaWithConsoleInput {
     public static void main(String[] args) {
         double radius;
         double area;
