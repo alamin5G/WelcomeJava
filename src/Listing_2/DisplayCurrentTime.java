@@ -9,7 +9,7 @@ public class DisplayCurrentTime {
         long currentMinutes     = totalMinutes % 60;
         long totalHours         = totalMinutes / 60;
         long currentHours       = totalHours % 24;
-        System.out.println("Current time is " + currentHours + ":" + currentMinutes + ":" + currentSeconds + " GMT");
+        System.out.println("Current time is " + (currentHours+6) + ":" + currentMinutes + ":" + currentSeconds + " GMT");
 
     }
 }
