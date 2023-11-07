@@ -1,16 +1,13 @@
 package Listing_2;
 
-import java.util.Scanner;
 
 public class ComputeArea {
-    public static void main(String[] args) {
-        double radius;
-        double area;
+    public static void main(String[] args){
 
-        System.out.print("Insert the radius of the circle: ");
-        Scanner input = new Scanner(System.in);
-        radius = input.nextDouble();
+        double radius = 20;
+        double area;
         area = radius * radius * 3.14159;
+
         System.out.println("The area for the circle of radius " + radius + " is " + area);
     }
 }
