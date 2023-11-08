@@ -9,7 +9,7 @@ public class MethodLearning {
         int times = input.nextInt();
 
         int sum = sumOfNumber(times);
-        System.out.println("The sum of 1 to " + times + " = " + sum);
+        System.out.println("The sum of 1 to " + times + " = " + sum); // sum printed here
     }
 
     private static int sumOfNumber(int times) {
