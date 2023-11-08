@@ -17,6 +17,6 @@ public class MethodLearning {
         for ( int i = 1; i <= times; i++) {
             value = value + i;
         }
-        return value;
+        return value; // returned
     }
 }
