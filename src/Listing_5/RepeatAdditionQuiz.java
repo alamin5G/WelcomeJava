@@ -13,6 +13,11 @@ public class RepeatAdditionQuiz {
         int result = input.nextInt();
         while (number1+number2 != result){
             System.out.println("Your answer was wrong! Try again!");
+
+            number1 = (int) (Math.random() * 10);
+            number2 = (int) (Math.random() * 10);
+            System.out.println("What is " + number1 + " + " + number2 + " = ?");
+
             result = input.nextInt();
         }
         System.out.println("Your answer is correct!");
