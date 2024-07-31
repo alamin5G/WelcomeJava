@@ -75,8 +75,6 @@ class TestCourse {
         for(int i = 0; i < students.length; i++){
             System.out.print(students[i] + ", ");
         }
-
-
         System.out.println("Number of Student in Course 2: " + c2.getNumberOfStudents());
     }
 }
