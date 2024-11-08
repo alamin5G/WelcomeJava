@@ -27,10 +27,10 @@ public class RegexExamples {
         testRegex("Jav[^b-d]", "Jave");
 
         // 8. [a-e[m-p]] - a through e or m through p
-        testRegex("[A-G[I-M]]av[a-d]", "Javb");
+        testRegex("[A-J[0-8]]av[a-d]", "Javb");
 
         // 9. [a-e&&[c-p]] - intersection of a-e and c-p
-        testRegex("[A-P&&[I-M]]av[a-d]", "Iavb");
+        testRegex("[A-P&&[I-M]]av[a-d]", "Javb");
 
         // 10. \d - any digit
         testRegex("Java\\d", "Java2");
@@ -66,7 +66,7 @@ public class RegexExamples {
         testRegex("J?Java", "Java");
 
         // 21. p? - zero or one occurrence of pattern "J"
-        testRegex("J?ava", "ava");
+        testRegex("J?ava", "java");
 
         // 22. p{n} - exactly n occurrences of "a"
         testRegex("Ja{1}.*", "Java");
