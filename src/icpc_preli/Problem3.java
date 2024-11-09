@@ -8,13 +8,13 @@ public class Problem3 {
         int t = sc.nextInt();
         for (int a = 1; a <= t; a++) {
             int n = sc.nextInt();
-            int k = sc.nextInt();
+            long k = sc.nextInt();
             int r = 0;
             for (int i = 1; i <= n; i++) {
                 int x = sc.nextInt();
                 int y = sc.nextInt();
-                int z = k / x;
-                r += z;
+                long z = k / x;
+                r += (int) z;
             }
             System.out.println("Case " + a + ": " + r);
         }
