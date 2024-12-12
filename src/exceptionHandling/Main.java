@@ -5,16 +5,27 @@ public class Main {
     public static void main(String[] args) {
 
 
+        try {
+            int a = 10;
+            int b = 0;
+            int c = divide(a, b);
+            System.out.println("c = " + c);
+        } catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exceptiont: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
+        } finally {
+            System.out.println("Finally block is always executed");
+        }
 
         try {
-            int result = divide(10, 0);
 
             int a = 10;
             int b = 0;
             int c = a / b;
-            System.out.println(c);
+            System.out.println("c = " + c);
         } catch (ArithmeticException e) {
-            System.out.println("Arithmetic Exception: " + e.getMessage());
+            System.out.println("Arithmetic Exceptions: " + e.getMessage());
         } catch (Exception e) {
             System.out.println("Exception: " + e.getMessage());
         } finally {
@@ -23,14 +34,9 @@ public class Main {
 
     }
 
-    public static int divide(int a, int b) throws ArithmeticException, ArrayIndexOutOfBoundsException {
+    public static int divide(int a, int b) throws ArithmeticException  {
 
-        if (b == 0) {
-            throw new ArithmeticException("Divide by zero is not allowed");
-        }else {
-            return a / b;
-        }
-
+        return a / b;
     }
 
 }
